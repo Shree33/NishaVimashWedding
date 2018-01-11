@@ -11,6 +11,23 @@
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <title>Nisha+Vimash</title>
 
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="vendor/popper/popper.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="js/jquery.serialize-object.min.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom scripts-->
+    <script src="js/scripts.js"></script>
+    <script src="js/submit.js"></script>
+
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -113,6 +130,22 @@
         </div>
       </div>
     </header> -->
+  <!-- <section class="success" id="RSVP"> -->
+      <h3>RSVP</h3>
+      <p>Enter your email to confirm your attendance!</p>
+
+      <form id='rsvpform'>
+        <p>
+        <label>Name</label>
+        <input id='Name' name='Name' type='text'>
+      </p><p>
+        <label>Email Address</label>
+        <input id='Email' name='Email' type='email'>
+      </p>
+        <div id='success'></div>
+        <button type='submit'>Send</button>
+      </form>
+  <!-- </section> -->
 
     <section id="schedule">
       <div class="container">
@@ -347,250 +380,6 @@
         <i class="fa fa-chevron-up"></i>
       </a>
     </div>
-
-    <!-- Portfolio Modals -->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
-                  <h2>Product Management Intern - Innovations</h2>
-                  <hr class="heart-primary">
-                  <img class="img-fluid img-centered" src="img/portfolio/logmein.png" alt="">
-                  <p>LogMeIn Innovations is a special team focused on finding the next moon shot product for LogMeIn. Over the course of three months, I worked with a small team of product managers, UX designers, software engineers, and data scientists to validate user problems and design product solutions using agile methodology and lean startup thinking. One of these product that we developed and tested over the summer is
-                    <a href="https://www.scopist.io/">Scopist.io</a>. Scopist is a new AI bot which will record your meetings and capture the key decisions, facts, and action items so that you can focus on collaboration during the meeting. During my time, I analyzed user research to create journey maps and personas to understand user habits and hone in on the key pain points that our new product would solve. I also conducted market research to understand the product's position in the field , estimate pricing, and identify opportunity areas for growth. Finally, I wrote new user stories and led grooming sessions to focus development on high priority targets with the help of the product manager and the engineering team.</p>
-                  <ul class="list-inline item-details">
-                    <li>Company:
-                      <strong>
-                        <a href="http://logmein.com">LogMeIn</a>
-                      </strong>
-                    </li>
-                    <li>Date:
-                      <strong>
-                        <a href="http://startbootstrap.com">June 2017</a>
-                      </strong>
-                    </li>
-                  </ul>
-                  <button class="btn btn-success" type="button" data-dismiss="modal">
-                    <i class="fa fa-times"></i>
-                    Close</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
-                  <h2>Academic Technology Fellow</h2>
-                  <hr class="heart-primary">
-                  <img class="img-fluid img-centered" src="img/portfolio/tts.png" alt="">
-                  <p>The Academic Technology Fellows work supports the IT department at Tufts University by prototyping and maintaining new technology-based solutions to enhance teaching and learning at Tufts. With a team of designers and engineers, I built a natural language processing application to digest data and analyze trends to help Tufts University administrators make decisions. Some of the other projects I have worked on include helping Tufts researchers display their data on custom made Google maps and created guides to help Tufts professors better use the technologies offered by the university.</p>
-                  <ul class="list-inline item-details">
-                    <li>Company:
-                      <strong>
-                        <a href="https://sites.tufts.edu/ets/at-fellows//">Tufts Technology Services</a>
-                      </strong>
-                    </li>
-                    <li>Date:
-                      <strong>
-                        <a> June 2016 - </a>
-                      </strong>
-                    </li>
-                  </ul>
-                  <button class="btn btn-success" type="button" data-dismiss="modal">
-                    <i class="fa fa-times"></i>
-                    Close</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
-                  <h2>Co-Founder</h2>
-                  <hr class="heart-primary">
-                  <img class="img-fluid img-centered" src="img/portfolio/vlab.png" alt="">
-                  <p>The Tufts Entrepreneurs Society serves the Tufts community by maintaining the VentureLab, an incubator on campus, and building a more visible and active entrepreneurial community. In the past year, we have grown the incubator from 15 to 38 startups and created a network of over 70 mentors to advise and push our student ventures forward. I organized and ran office hours, coaching nights, pitch nights, and marketing campaigns while also consulting individual startups in the venture lab and connecting them with the resources they need. You can find more information at our 
-                    <a href="https://www.tuftsentrepreneurs.com/">website</a>.</p>
-                  <ul class="list-inline item-details">
-                    <li>Company:
-                      <strong>
-                        <a href="https://www.tuftsentrepreneurs.com/">Tufts Entrepreneurs Society</a>
-                      </strong>
-                    </li>
-                    <li>Date:
-                      <strong>
-                        <a> Fall 2016 - </a>
-                      </strong>
-                    </li>
-                  </ul>
-                  <button class="btn btn-success" type="button" data-dismiss="modal">
-                    <i class="fa fa-times"></i>
-                    Close</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
-                  <h2>Teaching Assistant</h2>
-                  <hr class="heart-primary">
-                  <img class="img-fluid img-centered" src="img/portfolio/lb.png" alt="">
-                  <p>In the Fall of 2016, I worked as a teaching assistant for Introduction to Innovation, Creativity, and Entrepreneurship. This Freshmen only class focused on teaching how to unearth their innate creativity to spark new innovative ideas. With the teacher, Professor Inge Milde, I helped design the lesson plans prior to the class and led the discussions during the class by playing the devil's advocate and motivating the students to expand on their thoughts and ideas. I also met with the students outside of class to help them with their semester long projects centered around conceptualizing their own business or product.</p>
-                  <ul class="list-inline item-details">
-                    <li>Date:
-                      <strong>
-                        <a>Fall 2016</a>
-                      </strong>
-                    </li>
-                  </ul>
-                  <button class="btn btn-success" type="button" data-dismiss="modal">
-                    <i class="fa fa-times"></i>
-                    Close</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
-                  <h2>Events Intern</h2>
-                  <hr class="heart-primary">
-                  <img class="img-fluid img-centered" src="img/portfolio/els.png" alt="">
-                  <p>The Entrepreneurial Leadership Studies Department manages the most popular minor at Tufts and also runs an organizes university-wide programs to foster innovation and entrepreneurship. As an intern, I helped organize, manage, and run ELS events including Startup Weekend and Tufts 100k competition. I also created and maintained the Entrepreneurial Leadership Studies department’s website to serve as a central hub of Tufts entrepreneurship and innovation on the web at tufts-ten.com. </p>
-                  <ul class="list-inline item-details">
-                    <li>Company:
-                      <strong>
-                        <a href="http://www.tufts-ten.com/">Tufts Entrepreneurial Leadership Program</a>
-                      </strong>
-                    </li>
-                    <li>Date:
-                      <strong>
-                        <a> June 2016 - June 2017 </a>
-                      </strong>
-                    </li>
-                  </ul>
-                  <button class="btn btn-success" type="button" data-dismiss="modal">
-                    <i class="fa fa-times"></i>
-                    Close</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
-                  <h2>Co-Founder</h2>
-                  <hr class="heart-primary">
-                  <img class="img-fluid img-centered" src="img/portfolio/finns_fries.png" alt="">
-                  <p>In the Fall of 2015, My friend, Finn, and I recognized an opportunity in the Tufts late night dining scene. The school sponsored late night option, "The Commons", was closed for the semester for improvements. We realized that students wanted a place to fill up on carbs and socialize with friends after going out for the night so we devised a rudimentary business plan, bought a fryer and ingredients, and opened our doors to the population. It was our first foray and we slowly learned how to entice customers and spread the word, how to set prices and specials to increase traffic, and how to get feedback from customers and turn them into return customers. Overall, we made a sizeable profit of our initial investment but we decided it was not worth competing against the Commons when it opened back up and other interests took our attention. Our first attempt at a  <a href="https://docs.google.com/document/d/1YVMPAR_UPbbNpbZevMvhDevHDE4n_vpKrVD0r7UuwLs/edit?usp=sharing</p>">business plan</a> was a bit rough but I'm still proud of it! 
-                  <ul class="list-inline item-details">
-                    <li>Company:
-                      <strong>
-                        <a href="https://www.facebook.com/groups/752398458197913/">Finn's Fries</a>
-                      </strong>
-                    </li>
-                    <li>Date:
-                      <strong>
-                        <a> Fall 2015 </a>
-                      </strong>
-                    </li>
-                  </ul>
-                  <button class="btn btn-success" type="button" data-dismiss="modal">
-                    <i class="fa fa-times"></i>
-                    Close</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/popper/popper.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-    <!-- Contact Form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
-
-    <!-- Custom scripts for this template -->
-    <script src="js/scripts.js"></script>
 
   </body>
 

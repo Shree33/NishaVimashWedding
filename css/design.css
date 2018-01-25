@@ -9,25 +9,32 @@ p {
 
 p.small {
   font-size: 16px; }
-
+.question {
+  font-size: 20px;
+  padding-top:20px;
+  color:#2C2C50;}
+.answer{
+  font-size: 16px;
+  color:#2C2C50;}
 a,
 a.active,
 a:active,
 a:focus,
 a:hover {
-  color: #18BC9C;
+  color: #AD5494;
   outline: none; }
 
 h1,
 h2,
 h3,
-h4,
-h5,
 h6 {
-  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Montserrat', 'Helvetica Neue', sans-serif;
   /*font-weight: 700;*/
   text-transform: uppercase; }
-
+h5,
+h4{
+  font-family: 'Montserrat', 'Helvetica Neue', sans-serif;
+}
 hr.heart-light,
 hr.heart-primary {
   max-width: 250px;
@@ -52,14 +59,14 @@ hr.heart-light {
 
 hr.heart-light:after {
   color: #AD5494;
-  background-color: #684972; }
+  background-color:white; }
 
 hr.heart-primary {
   border-color: #AD5494; }
 
 hr.heart-primary:after {
   color: #AD5494;
-  background-color: white; }
+  background-color:#684972; }
 
 
 .img-centered {
@@ -473,15 +480,6 @@ footer {
     color: #AD5494;
     background-color: #AD5494; }
 
-.btn-social {
-  font-size: 20px;
-  line-height: 45px;
-  display: inline-block;
-  width: 50px;
-  height: 50px;
-  text-align: center;
-  border: 2px solid white;
-  border-radius: 100%; }
 
 .btn.active,
 .btn:active,
@@ -588,21 +586,23 @@ footer {
     margin-top:22px;
       margin-bottom: 4px;
       padding:0;
-      color: #b3b3b3;
+      color: #D6D7D1;
+      font-size:24px;
   }
 
   #schedule .timeline .timeline-heading h4.subheading {
     margin:0;
     padding:0;
       text-transform: none;
-      font-size:18px;
+      font-size:20px;
       color:#D6D7D1;
   }
 
   #schedule .timeline .timeline-body>p,
   #schedule .timeline .timeline-body>ul {
+      font-size:16px;
       margin-bottom: 0;
-      color:#2C2C50;
+      color:#b3b3b3;
   }
   /*Style for even div.line*/
   #schedule .timeline>li:nth-child(odd) .line:before {

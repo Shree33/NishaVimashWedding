@@ -4,7 +4,6 @@ var request;
 
 // Bind to the submit event of our form
 $("#rsvpform").submit(function(event){
-  console.log("here")
 
     // Abort any pending request
     if (request) {
@@ -54,7 +53,7 @@ $("#rsvpform").submit(function(event){
         // Reenable the inputs
         $inputs.prop("disabled", false);
     });
-
+    document.getElementById("rsvpform").innerHTML = "Thank You for Confirming!";
     // Prevent default posting of form
     event.preventDefault();
 });

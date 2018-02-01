@@ -169,39 +169,8 @@ section.success {
     #mainNav.navbar-shrink .navbar-brand {
       font-size: 1.5em; } }
 
-/* Carousel base class */
-/*.carousel {
-  margin-bottom: 4rem;
-}
-.carousel-caption {
-  bottom: 3rem;
-  z-index: 10;
-  font-family: 'Great Vibes', cursive;
-}
 
-.carousel-item {
-  height: 40rem;
-  background-color: #ACA1DD;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-}
-.carousel-item > img {
-  position: absolute;
-  object-fit: contain;
-  min-width: 100%;
-  max-width: 100%;
-  height: 40rem;
-}
-.title {
-  font-size: 1.75rem;
-  font-family: 'Great Vibes', cursive;
-  color:#AD5494;
-  text-transform: capitalize;
-}*/
-
-@media (min-width: 40em) {
-  /* Bump up size of carousel content */
+@media (min-width: 30em) {
   .carousel-caption p {
     margin-bottom: 1.25rem;
     font-size: 1rem;
@@ -549,10 +518,6 @@ footer {
       z-index: 100;
       position: absolute;
       left: 50%;
-      /*border: 7px solid #3b5998;*/
-      /*border-radius: 100%;*/
-      /*background-color: #3b5998;*/
-      /*box-shadow: 0 0 5px #4582ec;*/
       width: 200px;
       height: 200px;
       margin-left: -100px;
@@ -597,8 +562,8 @@ footer {
   }
 
   #schedule .timeline .timeline-heading h4.subheading {
-    margin:0;
-    padding:0;
+      margin:0;
+      padding:0;
       text-transform: none;
       font-size:20px;
       color:#D6D7D1;
@@ -689,11 +654,11 @@ footer {
       left: 0px;
     }
     .timeline>li:nth-child(even) .timeline-image {
-      /*left: 0px;*/
+      left: 0px;
       margin-left: 0px;
     }
     .timeline>li:nth-child(odd) .timeline-image {
-      /*left: 520px;*/
+      left: 520px;
       margin-left: 0px;
     }
     .timeline > li:nth-child(even) .timeline-panel {
@@ -712,12 +677,12 @@ footer {
     /* Custom, iPhone Retina */
   @media only screen and (max-width: 767px) {
     .timeline > li:nth-child(even) {
-      margin-bottom: 10px;
+      margin-bottom: 20px;
       min-height: 0px;
       /*right: 0px;*/
     }
     .timeline > li:nth-child(odd) {
-      margin-bottom: 10px;
+      margin-bottom: 20px;
       min-height: 0px;
       /*left: 0px;*/
     }
@@ -726,6 +691,19 @@ footer {
       width: 50px;
       height: 50px;
       margin-bottom:0px;
+    }
+    .timeline>li:nth-child(even) .timeline-image {
+      width: 50%;
+    }
+    .timeline>li:nth-child(odd) .timeline-image {
+      float:center;
+      width: 50%;
+    }
+    .timeline > li:nth-child(even) .timeline-panel {
+      width: 50%;
+    }
+    .timeline > li:nth-child(odd) .timeline-panel {
+      width: 50%;
     }
     .timeline > li .line {
       display: none;
